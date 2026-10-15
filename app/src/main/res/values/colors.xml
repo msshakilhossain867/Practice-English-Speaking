@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="item_text_color">#651FFF</color>
+    <color name="btn_color">#00B0FF</color>
+    <color name="text_semi_color">#482B2B2E</color>
+    <color name="text_color">#D4373240</color>"
+    <color name="item_color">#0E1414</color>
+    <color name="shadow_color">#7F7E7878</color>
+    <color name="semi_text_color">#482B2B2E</color>
+
+
+
+
+    <color name="highlight">#27F435</color> <!-- Highlight color (e.g., pink) -->
+    <color name="dimmedText">#A9A9A9</color> <!-- Dimmed color (gray) -->
+    <color name="defaultText">#000000</color> <!-- Default text color (black) -->
+</resources>

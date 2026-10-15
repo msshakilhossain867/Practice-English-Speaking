@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EnglishSpeakingPracticeApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorControlActivated">#FF6200EE</item> <!-- switch ON color -->
+        <item name="colorSwitchThumbNormal">#BDBDBD</item> <!-- switch OFF color -->
+
+    </style>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="Theme.EnglishSpeakingPracticeApp" parent="Base.Theme.EnglishSpeakingPracticeApp" />
+</resources>

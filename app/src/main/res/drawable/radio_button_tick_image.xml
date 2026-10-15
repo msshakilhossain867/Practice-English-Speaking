@@ -1,0 +1,5 @@
+<!-- drawable/radio_button_tick_image.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/baseline_check_24" android:state_checked="true" /> <!-- Tick image when checked -->
+    <item android:drawable="@drawable/baseline_radio_button_unchecked_24" android:state_checked="false" /> <!-- Default uncheck image -->
+</selector>

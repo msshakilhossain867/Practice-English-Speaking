@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btn_color"/> <!-- Primary Button Color -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item android:left="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#40000000"/> <!-- Shadow Color -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

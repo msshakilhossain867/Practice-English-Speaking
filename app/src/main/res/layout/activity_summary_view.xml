@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_14sdp"
+    tools:context=".SummaryViewActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!-- প্রতিটা Tab এর মতো দেখতে Custom TextView/Buttons থাকবে -->
+            <TextView
+                android:id="@+id/tab_listen"
+                style="@style/CustomTab"
+                android:text="Read Dialogues" />
+
+            <TextView
+                android:id="@+id/tab_quiz"
+                style="@style/CustomTab"
+                android:text="Quiz" />
+
+            <TextView
+                android:id="@+id/tab_practice"
+                style="@style/CustomTab"
+                android:text="Practice 1" />
+
+            <TextView
+                android:id="@+id/tab_grammar"
+                style="@style/CustomTab"
+                android:text="Practice 2" />
+
+            <TextView
+                android:id="@+id/tab_vocab"
+                style="@style/CustomTab"
+                android:text="Practice 3" />
+
+            <TextView
+                android:id="@+id/tab_convo"
+                style="@style/CustomTab"
+                android:text="Practice 4" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adContainer"
+        android:layout_below="@id/scrollable"
+        android:layout_marginBottom="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/shadow_color"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:src="@drawable/regular" />
+
+                <TextView
+                    android:id="@+id/textTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/pophin"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp">
+        <!-- Banner Ad will be placed here -->
+    </FrameLayout>
+
+
+</RelativeLayout>
